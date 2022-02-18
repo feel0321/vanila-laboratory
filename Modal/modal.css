@@ -1,0 +1,79 @@
+body {
+  height: 1000px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  background-color: skyblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: aqua;
+}
+
+.modal {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.modal-content {
+  background-color: white;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  margin: 100px 10% 100px 10%;
+  width: 80%;
+  animation-name: modal-down;
+  animation-duration: 0.5s;
+}
+
+@keyframes modal-down {
+  from {
+    top: -500px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 0px 16px;
+  background-color: skyblue;
+  color: white;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 4px 16px;
+  background-color: white;
+}
+
+.modal-footer {
+  padding: 4px 16px;
+  background-color: skyblue;
+  color: white;
+}
