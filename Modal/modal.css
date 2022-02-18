@@ -33,18 +33,20 @@ button:hover {
 .modal-content {
   background-color: white;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   left: 0;
   top: 0;
   margin: 100px 10% 100px 10%;
   width: 80%;
-  padding: 20px;
   animation-name: modal-down;
   animation-duration: 0.5s;
 }
 
 @keyframes modal-down {
   from {
-    top: -200px;
+    top: -500px;
   }
   to {
     top: 0;
@@ -54,4 +56,22 @@ button:hover {
 .close {
   float: right;
   font-weight: bold;
+}
+
+.modal-header {
+  padding: 4px 16px;
+  background-color: skyblue;
+  color: white;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 4px 16px;
+  background-color: white;
+}
+
+.modal-footer {
+  padding: 4px 16px;
+  background-color: skyblue;
+  color: white;
 }
