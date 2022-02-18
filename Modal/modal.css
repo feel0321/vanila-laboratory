@@ -55,11 +55,13 @@ button:hover {
 
 .close {
   float: right;
+  font-size: 24px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .modal-header {
-  padding: 4px 16px;
+  padding: 0px 16px;
   background-color: skyblue;
   color: white;
   font-weight: bold;
